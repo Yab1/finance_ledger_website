@@ -4,7 +4,7 @@ import { ChevronRightIcon } from "@heroicons/react/24/outline";
 export type ButtonProps = {
   text: string;
   icon: boolean;
-  style: string;
+  style?: string;
 } & (
   | {
       filled: true;
