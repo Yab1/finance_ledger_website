@@ -3,7 +3,7 @@ import Board from "../atoms/Board";
 import { BoardProps } from "../atoms/Board";
 
 // Assets
-import { mobileAssets } from "../store/IMAGES";
+import { desktopAssets, mobileAssets, tabletAssets } from "../store/IMAGES";
 
 const BoardProp: BoardProps = {
   background: "bg-Blue",
@@ -15,9 +15,24 @@ const BoardProp: BoardProps = {
 
 function Blog() {
   return (
-    <section>
-      <picture>
-        <source srcSet={mobileAssets["blog-post"]} media="(max-width:320px)" />
+    <section id="blog" className="md:flex md:flex-row-reverse">
+      <picture className="flex-1">
+        <source
+          srcSet={mobileAssets["blog-post-mobile"]}
+          media="(max-width:320px)"
+        />
+        <source
+          srcSet={desktopAssets["blog-post-desktop"]}
+          media="(max-width:425px)"
+        />
+        <source
+          srcSet={tabletAssets["blog-post-tablet"]}
+          media="(min-width:321px) and (max-width:768px)"
+        />
+        <source
+          srcSet={desktopAssets["blog-post-desktop"]}
+          media="(min-width:769px)"
+        />
         <img alt="Hero section background" />
       </picture>
       <Board {...BoardProp} />
