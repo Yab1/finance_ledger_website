@@ -14,6 +14,11 @@ export default {
         Dark: "#333333",
         Creme: "#F4F4F4",
       },
+      backgroundImage: {
+        "hero-mobile": "url('./src/assets/mobile/image-hero-mobile.svg')",
+        "hero-tablet": "url('./src/assets/tablet/image-hero-tablet.svg')",
+        "hero-desktop": "url('./src/assets/desktop/image-hero-desktop.svg')",
+      },
     },
   },
   plugins: [],
