@@ -19,9 +19,11 @@ function Board({ background, subtitle, title, body, text }: BoardProps) {
   };
 
   return (
-    <div className={`${background} text-white px-5 py-16 flex flex-col gap-6`}>
+    <div
+      className={`${background} text-white px-5 py-16 flex flex-col gap-6 place-content-center md:py-0 flex-1`}
+    >
       <p className="text-sm">{subtitle}</p>
-      <h2 className="text-3xl">{title}</h2>
+      <h2 className="text-3xl pr-16 md:pr-32 lg:pr-0">{title}</h2>
       <p className="text-sm">{body}</p>
       <Button {...notFilledButton} />
     </div>
