@@ -1,27 +1,49 @@
-# React + TypeScript + Vite
+# Finance Ledger - Company Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Logo](https://github.com/Yab1/finance_ledger_website/blob/main/src/assets/logo.svg)
 
-Currently, two official plugins are available:
+Welcome to Finance Ledger, your trusted destination for financial insights and solutions. Dive into our range of financial services, explore our team's expertise, and connect with us to transform your financial journey.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [About](#about)
+- [Features](#features)
+- [Usage](#usage)
+- [Design](#design)
+- [Contributing](#contributing)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## About
 
-- Configure the top-level `parserOptions` property like this:
+Finance Ledger is a company website that provides valuable insights into our services, team members, success stories, business cases, and our blog. Learn more about who we are and what we do.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Features
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Our website provides the following features:
+
+- Information about our services.
+- Insights into our team members.
+- Success stories and business cases.
+- A blog where we share valuable information.
+
+## Usage
+
+1. Explore our services.
+2. Learn about our team, services, and client success stories.
+3. Get in touch with us for personalized financial assistance.
+
+## Design
+
+![Design](https://github.com/Yab1/finance_ledger_website/blob/main/design/design-preview.png)
+
+Figma Design [Design](https://www.figma.com/file/c5pRolR3qzZS3M9yIviMLa/Finance-Ledger?type=design&mode=design&t=oLUYNAcs8INGSYvm-1)
+
+## Contributing
+
+Contributions are welcome! If you'd like to enhance Your Portfolio Website or add new features, feel free to fork the repository, create a new branch, and submit a pull request. You can also report issues or suggest improvements through the GitHub issue tracker.
+
+---
+
+Visit Site [Live Demo](https://finance-ledger-website.vercel.app/)
+
+Connect with me:  
+Visit my website at [Yeabsera](https://yab1.vercel.app/) | Follow me on [LinkedIn](https://www.linkedin.com/in/yab1/) | Check out my [GitHub](https://github.com/Yab1)
