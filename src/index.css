@@ -10,3 +10,10 @@ html {
 * {
   font-family: "Open Sans", "sans-serif";
 }
+.scale-y::before {
+  transform: scaleY(0);
+}
+
+.scale-y:hover::before {
+  transform: scaleY(1);
+}
