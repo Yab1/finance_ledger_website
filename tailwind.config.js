@@ -9,7 +9,8 @@ export default {
         lg: "1360px",
       },
       colors: {
-        Green: "#28A745",
+        "dark-green": "#28A745",
+        "light-green": "#2ebf4f",
         Blue: "#0284D0",
         Dark: "#333333",
         Creme: "#F4F4F4",
