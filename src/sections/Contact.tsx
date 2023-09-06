@@ -12,9 +12,10 @@ import { mobileAssets } from "../store/IMAGES";
 const filledButton: ButtonProps = {
   text: "Send",
   icon: false,
-  style: "text-white px-14 py-4 justify-self-start md:px-10 md:py-2",
+  style:
+    "text-white px-14 py-4 justify-self-start md:px-10 md:py-2 hover:bg-light-green transition-colors duration-200 ease-in",
   filled: true,
-  color: "bg-Green",
+  color: "bg-dark-green",
 };
 
 function Contact() {

@@ -8,9 +8,9 @@ import { ButtonProps } from "../atoms/Button";
 const filledButton: ButtonProps = {
   text: "Read More",
   icon: true,
+  style: "hover:bg-light-green transition-colors duration-200 ease-in",
   filled: true,
-  color:
-    "bg-dark-green hover:bg-light-green transition-colors duration-200 ease-in",
+  color: "bg-dark-green",
 };
 
 function Hero() {
