@@ -17,7 +17,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="bg-hero-mobile bg-cover bg-no-repeat p-5 text-white h-screen flex flex-col md:bg-hero-tablet lg:bg-hero-desktop"
+      className="bg-hero bg-cover bg-no-repeat p-5 text-white h-screen flex flex-col"
     >
       <Header />
       <div className="h-full flex flex-col place-items-center place-content-center gap-5">
