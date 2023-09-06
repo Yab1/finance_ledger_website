@@ -79,27 +79,27 @@ type Cases = { image: string; id: number };
 const cases: Cases[] = [
   {
     image: case1,
-    id: 1,
+    id: 0,
   },
   {
     image: case2,
-    id: 2,
+    id: 1,
   },
   {
     image: case3,
-    id: 3,
+    id: 2,
   },
   {
     image: case4,
-    id: 4,
+    id: 3,
   },
   {
     image: case5,
-    id: 5,
+    id: 4,
   },
   {
     image: case6,
-    id: 6,
+    id: 5,
   },
 ];
 
