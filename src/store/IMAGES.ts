@@ -116,19 +116,6 @@ const professionals: Team[] = [
   { id: 3, image: person3, name: "Steve Smith", position: "Marketing Head" },
 ];
 
-type Socials = {
-  id: number;
-  url: string;
-  icon: string;
-};
-
-const socials: Socials[] = [
-  { id: 1, url: "#", icon: facebook },
-  { id: 2, url: "#", icon: twitter },
-  { id: 3, url: "#", icon: linkedin },
-  { id: 4, url: "#", icon: youtube },
-];
-
 export {
   logo,
   mobileAssets,
@@ -136,5 +123,4 @@ export {
   desktopAssets,
   cases,
   professionals,
-  socials,
 };
