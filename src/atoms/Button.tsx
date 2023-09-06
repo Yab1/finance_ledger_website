@@ -5,6 +5,7 @@ export type ButtonProps = {
   text: string;
   icon: boolean;
   style?: string;
+  onClick?: () => void;
 } & (
   | {
       filled: true;
@@ -21,6 +22,7 @@ function Button(props: ButtonProps) {
       className={`${props.style} ${props.filled ? props.color : ""} ${
         props.filled ? "" : "bg-transparent border"
       } flex place-items-center rounded-md px-5 py-3 gap-1 w-fit h-fit`}
+      onClick={props.onClick}
     >
       {props.icon && <ChevronRight size={15} />}
       {props.text}

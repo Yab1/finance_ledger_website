@@ -10,7 +10,10 @@ const BoardProp: BoardProps = {
   subtitle: "What you are looking for",
   title: "We provide bespoke solutions",
   body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?",
+  body2:
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?",
   text: "Read More",
+  text2: "Read Less",
   style:
     "hover:bg-white hover:border-dark-green hover:text-dark-green transition-colors duration-200 ease-in",
 };
@@ -18,7 +21,7 @@ const BoardProp: BoardProps = {
 function About() {
   return (
     <section id="about" className="md:flex">
-      <picture className="flex-1">
+      <picture>
         <source
           srcSet={mobileAssets["group-photo-mobile"]}
           media="(max-width:320px)"
