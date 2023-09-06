@@ -78,7 +78,7 @@ function Contact() {
         ))}
       </div>
       <div className="bg-Creme mt-10 pb-10 flex flex-col gap-6 md:flex-row md:gap-0 md:pb-0">
-        <picture className="flex-1">
+        <picture>
           <source
             srcSet={mobileAssets["contact-mobile"]}
             media="(max-width:320px)"
