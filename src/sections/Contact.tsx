@@ -2,6 +2,9 @@
 import Button from "../atoms/Button";
 import { ButtonProps } from "../atoms/Button";
 
+// Bootstrap Icons
+import { Facebook, Twitter, Linkedin, Youtube } from "react-bootstrap-icons";
+
 //Assets
 import { desktopAssets, professionals, tabletAssets } from "../store/IMAGES";
 import { mobileAssets } from "../store/IMAGES";
@@ -29,16 +32,45 @@ function Contact() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!
       </p>
-
       <div className="grid gap-3 mt-5 w-full md:grid-cols-3 px-5">
         {professionals.map((person) => (
-          <div className="flex flex-col">
-            <button key={person.id}>
+          <div className="flex flex-col" key={person.id}>
+            <button className="relative scale-y group before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-Dark before:opacity-50 before:origin-top  before:transition-transform before:duration-500 hover:before:origin-bottom hover:transition-transform hover:duration-500">
               <img
                 src={person.image}
                 alt={`image ${person.image}`}
                 className="w-full"
               />
+              <div className="flex gap-5 place-items-center justify-center text-white absolute w-full inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300">
+                <a
+                  href="#"
+                  target="_blank"
+                  className="hover:text-dark-green transition-colors duration-200 ease-in"
+                >
+                  <Facebook size={30} />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  className="hover:text-dark-green transition-colors duration-200 ease-in"
+                >
+                  <Twitter size={30} />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  className="hover:text-dark-green transition-colors duration-200 ease-in"
+                >
+                  <Linkedin size={30} />
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  className="hover:text-dark-green transition-colors duration-200 ease-in"
+                >
+                  <Youtube size={30} />
+                </a>
+              </div>
             </button>
             <h3 className="text-xl text-center mt-3 mb-1">{person.name}</h3>
             <p className="text-center mb-5">{person.position}</p>
