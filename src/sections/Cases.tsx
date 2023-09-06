@@ -28,10 +28,10 @@ function Cases() {
         setCurrentCarousel((prev) => prev + 1);
     }
   }
-  function prev(): void {
+  function previous(): void {
     switch (currentCarousel) {
       case 1:
-        setCurrentCarousel((prev) => (prev = 5));
+        setCurrentCarousel(5);
         break;
       default:
         setCurrentCarousel((prev) => prev - 1);
@@ -72,7 +72,7 @@ function Cases() {
         currentCarousel={currentCarousel}
         handleVisibility={handleVisibility}
         next={next}
-        prev={prev}
+        prev={previous}
       />
     </section>
   );
