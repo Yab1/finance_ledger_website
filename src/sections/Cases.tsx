@@ -1,7 +1,43 @@
+import { useState } from "react";
+
+// organisms
+import Carousel from "../organisms/Carousel";
+
 //Assets
 import { cases } from "../store/IMAGES";
 
 function Cases() {
+  const [open, setOpen] = useState(false);
+  const [currentCarousel, setCurrentCarousel] = useState(0);
+
+  function handleVisibility() {
+    setOpen(!open);
+  }
+
+  function handleCarousel(id: number) {
+    handleVisibility();
+    setCurrentCarousel(id);
+  }
+
+  function next() {
+    switch (currentCarousel) {
+      case 5:
+        setCurrentCarousel(1);
+        break;
+      default:
+        setCurrentCarousel((prev) => prev + 1);
+    }
+  }
+  function prev(): void {
+    switch (currentCarousel) {
+      case 1:
+        setCurrentCarousel((prev) => (prev = 5));
+        break;
+      default:
+        setCurrentCarousel((prev) => prev - 1);
+    }
+  }
+
   return (
     <section
       id="cases"
@@ -18,7 +54,11 @@ function Cases() {
       </p>
       <div className="grid gap-3 mt-5 w-full md:grid-cols-3">
         {cases.map((item) => (
-          <button key={item.id}>
+          <button
+            key={item.id}
+            onClick={() => handleCarousel(item.id)}
+            className="shadow-xl hover:scale-95 transition-transform duration-200 ease-in"
+          >
             <img
               src={item.image}
               alt={`image ${item.image}`}
@@ -27,6 +67,13 @@ function Cases() {
           </button>
         ))}
       </div>
+      <Carousel
+        open={open}
+        currentCarousel={currentCarousel}
+        handleVisibility={handleVisibility}
+        next={next}
+        prev={prev}
+      />
     </section>
   );
 }
