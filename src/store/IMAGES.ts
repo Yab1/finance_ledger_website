@@ -27,10 +27,6 @@ import case6 from "../assets/image-business-case-6.svg";
 import person1 from "../assets/image-team-john-doe.svg";
 import person2 from "../assets/image-team-jane-doe.svg";
 import person3 from "../assets/image-team-steve-smith.svg";
-import facebook from "../assets/social-icon-facebook.svg";
-import linkedin from "../assets/social-icon-linkedin.svg";
-import twitter from "../assets/social-icon-twitter.svg";
-import youtube from "../assets/social-icon-youtube.svg";
 
 type MobileVersion = {
   "hero-mobile": string;
