@@ -72,7 +72,7 @@ function Cases() {
         currentCarousel={currentCarousel}
         handleVisibility={handleVisibility}
         next={next}
-        prev={previous}
+        previous={previous}
       />
     </section>
   );

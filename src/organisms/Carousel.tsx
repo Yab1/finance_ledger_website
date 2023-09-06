@@ -9,7 +9,7 @@ type CarouselProps = {
   open: boolean;
   handleVisibility: () => void;
   next: () => void;
-  prev: () => void;
+  previous: () => void;
 };
 
 function Carousel({
@@ -17,11 +17,11 @@ function Carousel({
   open,
   handleVisibility,
   next,
-  prev,
+  previous,
 }: CarouselProps) {
   return open ? (
     <div className="fixed inset-0 bg-backdrop text-white z-20 grid grid-cols-8 place-items-center">
-      <button className="col-start-1 md:col-start-2" onClick={prev}>
+      <button className="col-start-1 md:col-start-2" onClick={previous}>
         <ChevronLeft className="w-10 h-10" />
       </button>
       <img
