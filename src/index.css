@@ -10,10 +10,27 @@ html {
 * {
   font-family: "Open Sans", "sans-serif";
 }
+
+.bg-hero {
+  background-image: url(./assets/mobile/image-hero-mobile.svg);
+}
+
 .scale-y::before {
   transform: scaleY(0);
 }
 
 .scale-y:hover::before {
   transform: scaleY(1);
+}
+
+@media screen and (min-width: 768px) {
+  .bg-hero {
+    background-image: url(./assets/tablet/image-hero-tablet.svg);
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .bg-hero {
+    background-image: url(./assets/desktop/image-hero-desktop.svg);
+  }
 }
