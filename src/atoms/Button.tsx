@@ -1,5 +1,5 @@
-// Icons
-import { ChevronRightIcon } from "@heroicons/react/24/outline";
+// Bootstrap Icon
+import { ChevronRight } from "react-bootstrap-icons";
 
 export type ButtonProps = {
   text: string;
@@ -22,7 +22,7 @@ function Button(props: ButtonProps) {
         props.filled ? "" : "bg-transparent border"
       } flex place-items-center rounded-md px-5 py-3 gap-1 w-fit h-fit`}
     >
-      {props.icon && <ChevronRightIcon className="h-4 aspect-square" />}
+      {props.icon && <ChevronRight size={15} />}
       {props.text}
     </button>
   );
