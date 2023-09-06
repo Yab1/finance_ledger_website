@@ -9,7 +9,8 @@ const filledButton: ButtonProps = {
   text: "Read More",
   icon: true,
   filled: true,
-  color: "bg-Green",
+  color:
+    "bg-dark-green hover:bg-light-green transition-colors duration-200 ease-in",
 };
 
 function Hero() {

@@ -11,6 +11,8 @@ const BoardProp: BoardProps = {
   title: "Blog Post One",
   body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?",
   text: "Read Our Blog",
+  style:
+    "hover:bg-white hover:border-Blue hover:text-Blue transition-colors duration-200 ease-in",
 };
 
 function Blog() {

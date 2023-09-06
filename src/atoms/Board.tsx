@@ -8,13 +8,14 @@ export type BoardProps = {
   title: string;
   body: string;
   text: string;
+  style: string;
 };
 
-function Board({ background, subtitle, title, body, text }: BoardProps) {
+function Board({ background, subtitle, title, body, text, style }: BoardProps) {
   const notFilledButton: ButtonProps = {
     text: text,
     icon: false,
-    style: "row-start-5",
+    style: `row-start-5 ${style}`,
     filled: false,
   };
 

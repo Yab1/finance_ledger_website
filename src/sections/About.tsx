@@ -6,11 +6,13 @@ import { BoardProps } from "../atoms/Board";
 import { mobileAssets, tabletAssets, desktopAssets } from "../store/IMAGES";
 
 const BoardProp: BoardProps = {
-  background: "bg-Green",
+  background: "bg-dark-green",
   subtitle: "What you are looking for",
   title: "We provide bespoke solutions",
   body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores deleniti?",
   text: "Read More",
+  style:
+    "hover:bg-white hover:border-dark-green hover:text-dark-green transition-colors duration-200 ease-in",
 };
 
 function About() {
